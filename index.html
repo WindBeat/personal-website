@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="Jordan Walker Personal Page">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/main.css">
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans|Raleway:300' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="js/stylesheets/jquery.sidr.light.css">
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <header>
+            <nav>
+                <ul id="menu">
+                    <li>
+                        <a href ="#shop-list">Projects</a>
+                    </li>
+                    <li>
+                        <a href ="#skills">Skills</a>
+                    </li>
+                <ul>
+            </nav>        
+            <div class = "container">
+                <span>
+                    <img src = "img/logo1.png"/>
+                </span>
+                <h2>Hello, my name is Jordan. I am a passionate front-end web developer and ux designer based in Sacramento, California.
+                </h2>
+                <ul>
+                    <li>
+                        <a href="https://github.com/WindBeat">Github</a>
+                    </li>
+                    <li>
+                        <a href="http://www.linkedin.com/pub/jordan-walker/48/424/a65">Linkedin</a>
+                    </li>
+                    <li>
+                        <a href="mailto:jordanwalker465@gmail.com">Contact
+                        </a>
+                    </li>
+                </ul> 
+               <!-- <a href ="#" class="button-link">View My Work</a> -->     
+            </div>
+        </header>
+        <section id ="shop-list" class="projects">
+            <h2>Shopping List
+                <a class="project-link" href="http://windbeat.github.io/shoppinglist/">
+                    <span class="text">Launch Site ↗</span>
+                </a>
+            </h2>
+            <img class="project-img" src ="img/shop.png">
+            <div class="sidebar">
+                <p>This is a shopping list app that uses html, css and some basic jquery. List apps are usually a minimalistic service, so I tried to keep it light and simple.</p> 
+            </div>
+        </section>
+        <section id ="quiz" class="projects">
+            <h2>Olympics Quiz
+                <a class="project-link" href="http://windbeat.github.io/quizapp/">
+                  <span class="text">Launch Site ↗</span>
+                </a>
+            </h2>
+            <img class="project-img" src="img/quiz.png">
+            <div class="sidebar">
+                <p>This is a quiz app based on a Winter Olympics theme. I played around with jquery accordion and used it to structure the questions. I made use of alerts, to show your result at the end.</p> 
+            </div>
+        </section>
+        <section id ="skills">
+            <div id="what-i-know">
+                <h2>What I Know</h2>
+                <p class="intro">I possess several years of self-taught front-end development and ux design experience.</p>
+                <p>I develop clean and semantic solutions that utilize hand-coded HTML5 and CSS3. I use modern trends in web/mobile design, such as SASS and media queries. I also have extensive experience providing technical support, managing projects, and providing excellent customer service.</p>
+            </div>
+            <div id="chart">
+                <ul id ="skills">
+                    <li>
+                        <div id="html-css">
+                            <h4>HTML5/CSS3</h4>
+                        </div>
+                    </li>
+                    <li>
+                        <div id="responsive">
+                            <h4>Responsive Web/ Media Queries</h4>
+                        </div>
+                    </li>
+                    <li>
+                        <div id="jquery">
+                            <h4>JQuery &amp; JavaScript</h4>
+                        </div>
+                    </li>
+                    <li>
+                        <div id="wordpress">
+                            <h4>WordPress</h4>
+                        </div>
+                    </li>
+                    <li>
+                        <div id="ux-ui">
+                            <h4>UX/UI Design</h4>
+                        </div>
+                    </li>
+                    <li>
+                        <div id="sketch">
+                            <h4>Sketch</h4>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js">
+        </script>
+        <script type="text/javascript">
+$(document).ready(function () {
+    $('.slideout-menu-toggle').on('click', function(event){
+        event.preventDefault();
+        // create menu variables
+        var slideoutMenu = $('.slideout-menu');
+        var slideoutMenuWidth = $('.slideout-menu').width();
+        
+        // toggle open class
+        slideoutMenu.toggleClass("open");
+        
+        // slide menu
+        if (slideoutMenu.hasClass("open")) {
+            slideoutMenu.animate({
+                left: "0px"
+            }); 
+        } else {
+            slideoutMenu.animate({
+                left: -slideoutMenuWidth
+            }, 250);    
+        }
+    });
+});
+</script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+        <script src="js/main.js"></script>
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X');ga('send','pageview');
+        </script>
+    </body>
+</html>
