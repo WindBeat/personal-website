@@ -308,5 +308,6 @@ section {
   /* line 265, ../sass/main.scss */
   #what-i-know {
     width: 100%;
+    margin-right: 100px;
   }
 }
