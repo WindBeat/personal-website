@@ -310,7 +310,7 @@ section {
   }
 
   /* line 265, ../sass/main.scss */
-  #what-i-know, .container {
+  #what-i-know {
     width: 100%;
     margin-left: -10px;
   }
