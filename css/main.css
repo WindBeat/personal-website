@@ -317,7 +317,7 @@ section {
   
   .container {
     width: 100%;
-    margin-left: -20px;
+    margin-left: 0px;
   }
 }
-}
+
