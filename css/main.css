@@ -296,6 +296,9 @@ section {
     font-size: 1.3em;
   }
 
+#menu li {
+  font-size: 1.2em;
+}
   /* line 257, ../sass/main.scss */
   .project-img {
     width: 70%;
@@ -307,7 +310,7 @@ section {
   }
 
   /* line 265, ../sass/main.scss */
-  #what-i-know {
+  #what-i-know, .container {
     width: 100%;
     margin-left: -30px;
   }
