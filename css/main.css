@@ -190,6 +190,10 @@ section {
   background-color: #27ae60;
 }
 
+#rss {
+  background-color: #e74c3c;
+}
+
 /* line 167, ../sass/main.scss */
 #what-i-know {
   width: 53%;
